@@ -8,12 +8,14 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 
 // Local imports
 import App from './App';
+import rootReducer from './reducers';		// Import all reducers using the combineReducers Redux method
 
 // Assets
 import './index.css';
 
 // Redux Store
 const store = createStore(
+	rootReducer,
 	composeWithDevTools(applyMiddleware(thunk))
 );
 
