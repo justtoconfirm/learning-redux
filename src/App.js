@@ -1,9 +1,10 @@
 import React from 'react';
+import PostsPage from './pages/PostsPage';
 
 const App = () => {
 
 	return (
-		<h1>Hello Redux</h1>
+		<PostsPage />
 	);
 
 };
